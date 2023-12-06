@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 50px;
+}
+
+/* select {
+    text-align: center;
+}
+
+.search-botton {
+    float: right;
+}
+
+#searchMethod {
+    right: 0;
+}
+

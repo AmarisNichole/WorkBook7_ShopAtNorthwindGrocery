@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="assets/css/product.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
 <link
@@ -14,16 +16,17 @@
 </head>
 <body>
     <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="/index.html" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="/product.html" role="tab" aria-controls="nav-profile" aria-selected="false">Products</a>
-        </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
-        <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
-      </div>
-      <h1>Products Search Page</h1>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/product.html">Products</a>
+            </li>
+          </ul>
+    </nav>
+
+    <h1>Products Search Page</h1>
 
     <label for="searchMethod">Select search method:</label>
     <select id="searchMethod">
@@ -33,7 +36,7 @@
 
     <div id="categoryDropdown" style="display:none;">
         <label for="category">Select category:</label>
-        <select id="category">
+        <select id="categoryDropdown">
             <!-- Categories will be dynamically populated here -->
         </select>
     </div>
@@ -43,6 +46,8 @@
     <div id="results">
         <!-- Results will be displayed here -->
     </div>
+
+  
 
     <script src="assets/js/index.js"></script>
 </body>
